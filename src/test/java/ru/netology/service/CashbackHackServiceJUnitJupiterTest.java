@@ -1,23 +1,23 @@
 package ru.netology.service;
 
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 
-public class CashbackHackServiceTest {
+class CashbackHackServiceJUnitJupiterTest {
 
     @Test
     public void testRemainOutputNumberLessThousand() {
 
-            int amount = 700;
-            int expected = 300;
+        int amount = 700;
+        int expected = 300;
 
-            CashbackHackService service = new CashbackHackService();
-            int actual = service.remain(amount);
+        CashbackHackService service = new CashbackHackService();
+        int actual = service.remain(amount);
 
-        Assert.assertEquals(expected, actual);
-        }
+        Assertions.assertEquals(expected, actual);
+    }
 
     @Test
     public void testRemainOutputNumberOverThousand() {
@@ -27,7 +27,7 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(amount);
 
-        Assert.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -38,7 +38,7 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(amount);
 
-        Assert.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -49,7 +49,7 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(amount);
 
-        Assert.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -60,7 +60,7 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(amount);
 
-        Assert.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -71,7 +71,7 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(amount);
 
-        Assert.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -82,9 +82,10 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
         int actual = service.remain(amount);
 
-        Assert.assertEquals(expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     public void testRemain() {
     }
+
 }
